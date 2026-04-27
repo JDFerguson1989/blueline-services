@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', sans-serif;
+    --font-oswald: 'Oswald', sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background-color: #040d1a;
+    color: #ffffff;
+    font-family: var(--font-inter);
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: var(--font-oswald);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-md transition-all duration-200 shadow-lg hover:shadow-blue-500/30 hover:scale-105;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white font-bold px-6 py-3 rounded-md transition-all duration-200;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center uppercase tracking-wide font-display;
+  }
+
+  .section-divider {
+    @apply flex items-center gap-4 justify-center mb-10;
+  }
+
+  .section-divider::before,
+  .section-divider::after {
+    content: '';
+    @apply flex-1 h-px bg-blue-600/40 max-w-xs;
+  }
+
+  .card-service {
+    @apply bg-gradient-to-b from-[#0a1c38] to-[#071428] border border-blue-900/40 rounded-xl p-5 hover:border-blue-500/60 hover:shadow-lg hover:shadow-blue-900/30 transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .check-item {
+    @apply flex items-center gap-2 text-white font-medium;
+  }
+}
+
+/* Hero background */
+.hero-bg {
+  background: linear-gradient(135deg, #040d1a 0%, #071428 35%, #0a2040 80%, #0d3060 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(21, 101, 192, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Water droplet glow effect */
+.water-glow {
+  filter: drop-shadow(0 0 20px rgba(33, 150, 243, 0.5));
+}
+
+/* Animated gradient border */
+.gradient-border {
+  background: linear-gradient(90deg, #1565C0, #00B0FF, #1565C0);
+  background-size: 200%;
+  animation: gradientMove 3s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Trust badge */
+.trust-badge {
+  @apply flex flex-col items-center text-center gap-1 p-4;
+}
+
+/* Before/After slider */
+.before-after-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #040d1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1565C0;
+  border-radius: 3px;
+}
