@@ -5,3 +5,6 @@ build/
 .env*
 .DS_Store
 app/layout.tsx.save
+
+Dockerfile.backup.*
+app/globals.css.backup.*
