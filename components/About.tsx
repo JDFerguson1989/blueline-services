@@ -93,6 +93,11 @@ export default function About() {
                   ))}
                   <li className="text-blue-400 font-bold text-xs italic mt-1">AND SURROUNDING AREAS!</li>
                 </ul>
+                <div className="mt-4 pl-6">
+                  <a href="/pressure-washing-lake-jackson-tx" className="text-sm text-blue-400 hover:text-white transition-colors underline underline-offset-2">
+                    Pressure Washing in Lake Jackson, TX &rarr;
+                  </a>
+                </div>
               </div>
 
               {/* Texas map Image */}

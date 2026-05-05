@@ -276,6 +276,8 @@ export default function Page() {
         <a href="/#gallery" className="text-blue-400 hover:text-white">Gallery</a>
         <span className="mx-3">|</span>
         <a href="/#contact" className="text-blue-400 hover:text-white">Contact</a>
+        <span className="mx-3">|</span>
+        <a href="/pressure-washing-lake-jackson-tx" className="text-blue-400 hover:text-white">Lake Jackson</a>
       </section>
     </main>
   );
