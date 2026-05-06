@@ -76,7 +76,7 @@ const FAQS = [
   },
   {
     q: 'What areas near Freeport do you serve?',
-    a: 'BlueLine Services serves Freeport, Clute, Freeport, Richwood, Angleton, Brazoria, Sweeny, Bay City, Sargent, Matagorda, Van Vleck, Markham, Cedar Lake, Cedar Lane, and nearby Gulf Coast Texas communities.',
+    a: 'BlueLine Services serves Freeport, Clute, Richwood, Angleton, Brazoria, Sweeny, Bay City, Sargent, Matagorda, Van Vleck, Markham, Cedar Lake, Cedar Lane, and nearby Gulf Coast Texas communities.',
   },
 ];
 
@@ -272,7 +272,7 @@ export default function Page() {
             Areas Near Freeport We Serve
           </h2>
           <p className="text-gray-300 leading-relaxed mb-4">
-            BlueLine Services proudly serves Freeport and nearby Gulf Coast Texas communities, including Clute, Freeport, Richwood, Angleton, Brazoria, Sweeny, Bay City, Sargent, Matagorda, Van Vleck, Markham, Cedar Lake, Cedar Lane, and surrounding areas.
+            BlueLine Services serves Freeport and nearby Gulf Coast Texas communities, including Clute, Richwood, Lake Jackson, Angleton, Brazoria, Sweeny, Bay City, Sargent, Matagorda, Van Vleck, Markham, Cedar Lake, Cedar Lane, and surrounding areas.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-gray-300">
             {[
@@ -336,6 +336,7 @@ export default function Page() {
             <a href="/" className="text-blue-400 hover:text-white transition-colors">Home</a>
             <span className="text-gray-600">|</span>
             <a href="/pressure-washing-sargent-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Sargent, TX</a>
+            <span className="text-gray-600">|</span>            <a href="/pressure-washing-lake-jackson-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Lake Jackson, TX</a>            <span className="text-gray-600">|</span>
             <span className="text-gray-600">|</span>
             <a href="/pressure-washing-freeport-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Freeport, TX</a>
             <span className="text-gray-600">|</span>
