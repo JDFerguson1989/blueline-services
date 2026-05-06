@@ -276,7 +276,7 @@ export default function Page() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-gray-300">
             {[
-              'Freeport, TX', 'Clute, TX', 'Freeport, TX',
+              'Freeport, TX', 'Clute, TX', 'Richwood, TX',
               'Richwood, TX', 'Angleton, TX', 'Brazoria, TX',
               'Sweeny, TX', 'Bay City, TX', 'Sargent, TX',
               'Matagorda, TX', 'Van Vleck, TX', 'Markham, TX',
