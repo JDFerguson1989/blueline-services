@@ -25,6 +25,7 @@ const LINKED_PATHS = {
   'SARGENT, TX': '/pressure-washing-sargent-tx',
   'LAKE JACKSON, TX': '/pressure-washing-lake-jackson-tx',
   'FREEPORT, TX': '/pressure-washing-freeport-tx',
+  "BAY CITY, TX": "/pressure-washing-bay-city-tx",
 };
 
 export default function About() {
