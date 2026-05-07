@@ -28,6 +28,7 @@ const LINKED_PATHS = {
   "BAY CITY, TX": "/pressure-washing-bay-city-tx",
   "SWEENY, TX": "/pressure-washing-sweeny-tx",
   "BRAZORIA, TX": "/pressure-washing-brazoria-tx",
+  "CEDAR LAKE, TX": "/pressure-washing-cedar-lake-tx",
 };
 
 export default function About() {
