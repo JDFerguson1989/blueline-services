@@ -76,7 +76,7 @@ const FAQS = [
   },
   {
     q: 'What areas near Sweeny do you serve?',
-    a: 'BlueLine Services serves Sweeny, Sargent, Lake Jackson, Freeport, Sweeny, Brazoria, Van Vleck, Markham, Matagorda, Cedar Lake, Cedar Lane, Angleton, Clute, Richwood, and nearby Gulf Coast communities.',
+    a: 'BlueLine Services serves Sweeny, Bay City, Brazoria, Lake Jackson, Freeport, Sargent, West Columbia, Van Vleck, Markham, Matagorda, Cedar Lake, Cedar Lane, Angleton, Clute, Richwood, and nearby Gulf Coast communities.',
   },
 ];
 
@@ -272,15 +272,25 @@ export default function Page() {
             Areas Near Sweeny We Serve
           </h2>
           <p className="text-gray-300 leading-relaxed mb-4">
-            BlueLine Services serves Sweeny and nearby Gulf Coast Texas communities, including Sargent, Lake Jackson, Freeport, Sweeny, Brazoria, Van Vleck, Markham, Matagorda, Cedar Lake, Cedar Lane, Angleton, Clute, Richwood, and surrounding areas.
+            BlueLine Services serves Sweeny and nearby Gulf Coast Texas communities, including Bay City, Brazoria, Lake Jackson, Freeport, Sargent, West Columbia, Van Vleck, Markham, Matagorda, Cedar Lake, Cedar Lane, Angleton, Clute, Richwood, and surrounding areas.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-gray-300">
             {[
-              'Sweeny, TX', 'Clute, TX', 'Richwood, TX',
-              'Richwood, TX', 'Angleton, TX', 'Brazoria, TX',
-              'Sweeny, TX', 'Sweeny, TX', 'Sargent, TX',
-              'Matagorda, TX', 'Van Vleck, TX', 'Markham, TX',
-              'Cedar Lake, TX', 'Cedar Lane, TX',
+              'Sweeny, TX',
+              'Bay City, TX',
+              'Brazoria, TX',
+              'Lake Jackson, TX',
+              'Freeport, TX',
+              'Sargent, TX',
+              'West Columbia, TX',
+              'Van Vleck, TX',
+              'Markham, TX',
+              'Matagorda, TX',
+              'Cedar Lake, TX',
+              'Cedar Lane, TX',
+              'Angleton, TX',
+              'Clute, TX',
+              'Richwood, TX',
             ].map((city) => (
               <div key={city} className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-blue-400 rounded-full"></span>
@@ -336,7 +346,12 @@ export default function Page() {
             <a href="/" className="text-blue-400 hover:text-white transition-colors">Home</a>
             <span className="text-gray-600">|</span>
             <a href="/pressure-washing-sargent-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Sargent, TX</a>
-            <span className="text-gray-600">|</span>            <a href="/pressure-washing-lake-jackson-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Lake Jackson, TX</a>            <span className="text-gray-600">|</span>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-lake-jackson-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Lake Jackson, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-freeport-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Freeport, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-bay-city-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Bay City, TX</a>
             <span className="text-gray-600">|</span>
             <a href="/pressure-washing-sweeny-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Sweeny, TX</a>
             <span className="text-gray-600">|</span>
