@@ -272,7 +272,7 @@ export default function Page() {
             Areas Near Bay City We Serve
           </h2>
           <p className="text-gray-300 leading-relaxed mb-4">
-            BlueLine Services serves Bay City and nearby Gulf Coast Texas communities, including Clute, Richwood, Lake Jackson, Angleton, Brazoria, Sweeny, Bay City, Sargent, Matagorda, Van Vleck, Markham, Cedar Lake, Cedar Lane, and surrounding areas.
+            BlueLine Services serves Bay City and nearby Gulf Coast Texas communities, including Sargent, Lake Jackson, Freeport, Sweeny, Brazoria, Van Vleck, Markham, Matagorda, Cedar Lake, Cedar Lane, Angleton, Clute, Richwood, and surrounding areas.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-gray-300">
             {[
