@@ -27,6 +27,7 @@ const LINKED_PATHS = {
   'FREEPORT, TX': '/pressure-washing-freeport-tx',
   "BAY CITY, TX": "/pressure-washing-bay-city-tx",
   "SWEENY, TX": "/pressure-washing-sweeny-tx",
+  "BRAZORIA, TX": "/pressure-washing-brazoria-tx",
 };
 
 export default function About() {
