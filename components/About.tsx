@@ -29,6 +29,7 @@ const LINKED_PATHS = {
   "SWEENY, TX": "/pressure-washing-sweeny-tx",
   "BRAZORIA, TX": "/pressure-washing-brazoria-tx",
   "CEDAR LAKE, TX": "/pressure-washing-cedar-lake-tx",
+  "CEDAR LANE, TX": "/pressure-washing-cedar-lane-tx",
 };
 
 export default function About() {
