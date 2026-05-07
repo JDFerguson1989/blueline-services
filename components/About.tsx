@@ -26,6 +26,7 @@ const LINKED_PATHS = {
   'LAKE JACKSON, TX': '/pressure-washing-lake-jackson-tx',
   'FREEPORT, TX': '/pressure-washing-freeport-tx',
   "BAY CITY, TX": "/pressure-washing-bay-city-tx",
+  "SWEENY, TX": "/pressure-washing-sweeny-tx",
 };
 
 export default function About() {
