@@ -1,10 +1,10 @@
 const NAV_LINKS = [
-  { href: '#home', label: 'HOME' },
-  { href: '#services', label: 'SERVICES' },
-  { href: '#about', label: 'ABOUT US' },
-  { href: '#areas', label: 'SERVICE AREAS' },
-  { href: '#gallery', label: 'GALLERY' },
-  { href: '#contact', label: 'CONTACT' },
+  { href: "#home", label: "HOME" },
+  { href: "#services", label: "SERVICES" },
+  { href: "#about", label: "ABOUT US" },
+  { href: "#areas", label: "SERVICE AREAS" },
+  { href: "#gallery", label: "GALLERY" },
+  { href: "#contact", label: "CONTACT" },
 ];
 
 export default function Footer() {
@@ -46,10 +46,18 @@ export default function Footer() {
 
       {/* Copyright bar */}
       <div className="py-4 border-t border-blue-900/20">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-gray-500 text-xs">
-            © 2024 BlueLine Services. All Rights Reserved.
+            &copy; 2024 BlueLine Services. All Rights Reserved.
           </p>
+          <a
+            href="https://www.facebook.com/profile.php?id=61589064537386"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-blue-400 hover:text-white transition-colors font-semibold"
+          >
+            Follow Us on Facebook
+          </a>
         </div>
       </div>
     </footer>
