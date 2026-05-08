@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter, Oswald } from 'next/font/google';
 import './globals.css';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+import AnalyticsClicks from '@/components/AnalyticsClicks';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const oswald = Oswald({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-oswald' });
@@ -87,6 +89,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
         {children}
+        <GoogleAnalytics />
+        <AnalyticsClicks />
       </body>
     </html>
   );
