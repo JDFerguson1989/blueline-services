@@ -277,8 +277,8 @@ export default function Page() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-gray-300">
             {[
               'Bay City, TX', 'Clute, TX', 'Richwood, TX',
-              'Richwood, TX', 'Angleton, TX', 'Brazoria, TX',
-              'Sweeny, TX', 'Bay City, TX', 'Sargent, TX',
+              'Angleton, TX', 'Brazoria, TX',
+              'Sweeny, TX', 'Sargent, TX',
               'Matagorda, TX', 'Van Vleck, TX', 'Markham, TX',
               'Cedar Lake, TX', 'Cedar Lane, TX',
             ].map((city) => (
@@ -336,9 +336,20 @@ export default function Page() {
             <a href="/" className="text-blue-400 hover:text-white transition-colors">Home</a>
             <span className="text-gray-600">|</span>
             <a href="/pressure-washing-sargent-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Sargent, TX</a>
-            <span className="text-gray-600">|</span>            <a href="/pressure-washing-lake-jackson-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Lake Jackson, TX</a>            <span className="text-gray-600">|</span>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-lake-jackson-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Lake Jackson, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-freeport-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Freeport, TX</a>
             <span className="text-gray-600">|</span>
             <a href="/pressure-washing-bay-city-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Bay City, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-sweeny-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Sweeny, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-brazoria-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Brazoria, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-cedar-lake-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Cedar Lake, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-cedar-lane-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Cedar Lane, TX</a>
             <span className="text-gray-600">|</span>
             <a href="/#services" className="text-blue-400 hover:text-white transition-colors">Services</a>
             <span className="text-gray-600">|</span>
@@ -351,6 +362,7 @@ export default function Page() {
           </p>
         </div>
       </section>
+
     </main>
   );
 }

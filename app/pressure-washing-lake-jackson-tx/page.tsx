@@ -339,6 +339,18 @@ export default function Page() {
             <span className="text-gray-600">|</span>
             <a href="/pressure-washing-lake-jackson-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Lake Jackson, TX</a>
             <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-freeport-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Freeport, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-bay-city-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Bay City, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-sweeny-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Sweeny, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-brazoria-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Brazoria, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-cedar-lake-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Cedar Lake, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-cedar-lane-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Cedar Lane, TX</a>
+            <span className="text-gray-600">|</span>
             <a href="/#services" className="text-blue-400 hover:text-white transition-colors">Services</a>
             <span className="text-gray-600">|</span>
             <a href="/#gallery" className="text-blue-400 hover:text-white transition-colors">Gallery</a>
@@ -350,6 +362,7 @@ export default function Page() {
           </p>
         </div>
       </section>
+
     </main>
   );
 }

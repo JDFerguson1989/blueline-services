@@ -268,17 +268,59 @@ export default function Page() {
         </a>
       </section>
 
-      <section className="border-t border-blue-900/30 bg-[#040d1a] px-6 py-8 text-center text-sm text-gray-400">
-        <a href="/" className="text-blue-400 hover:text-white">Home</a>
-        <span className="mx-3">|</span>
-        <a href="/#services" className="text-blue-400 hover:text-white">Services</a>
-        <span className="mx-3">|</span>
-        <a href="/#gallery" className="text-blue-400 hover:text-white">Gallery</a>
-        <span className="mx-3">|</span>
-        <a href="/#contact" className="text-blue-400 hover:text-white">Contact</a>
-        <span className="mx-3">|</span>
-        <a href="/pressure-washing-lake-jackson-tx" className="text-blue-400 hover:text-white">Lake Jackson</a>
+      {/* FAQPage JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map(([q, a]) => ({
+              '@type': 'Question',
+              name: q,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: a,
+              },
+            })),
+          }),
+        }}
+      />
+
+      {/* Internal Links & Footer */}
+      <section className="bg-navy-800 border-t border-blue-900/30 py-8">
+        <div className="max-w-5xl mx-auto px-6 text-center space-y-4">
+          <div className="flex flex-wrap justify-center gap-4 text-sm">
+            <a href="/" className="text-blue-400 hover:text-white transition-colors">Home</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-sargent-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Sargent, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-lake-jackson-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Lake Jackson, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-freeport-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Freeport, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-bay-city-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Bay City, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-sweeny-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Sweeny, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-brazoria-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Brazoria, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-cedar-lake-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Cedar Lake, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/pressure-washing-cedar-lane-tx" className="text-blue-400 hover:text-white transition-colors">Pressure Washing Cedar Lane, TX</a>
+            <span className="text-gray-600">|</span>
+            <a href="/#services" className="text-blue-400 hover:text-white transition-colors">Services</a>
+            <span className="text-gray-600">|</span>
+            <a href="/#gallery" className="text-blue-400 hover:text-white transition-colors">Gallery</a>
+            <span className="text-gray-600">|</span>
+            <a href="/#contact" className="text-blue-400 hover:text-white transition-colors">Contact</a>
+          </div>
+          <p className="text-gray-500 text-xs">
+            &copy; {new Date().getFullYear()} BlueLine Services. All rights reserved.
+          </p>
+        </div>
       </section>
+
     </main>
   );
 }
