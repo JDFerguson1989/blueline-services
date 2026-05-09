@@ -12,8 +12,29 @@ export const metadata: Metadata = {
   title: 'BlueLine Services | Pressure Washing & Soft Washing | 832-557-8758',
   description:
     'BlueLine Services provides professional pressure washing and soft washing across Sargent, Lake Jackson, Freeport, Bay City, Sweeny, Brazoria, Cedar Lake, Cedar Lane, and nearby Gulf Coast Texas areas. We clean homes, driveways, roofs, decks, fences, docks, piers, and boathouses. Free quotes available. Call 832-557-8758.',
-  keywords:
-    'pressure washing Sargent TX, soft washing Sargent TX, house washing Sargent TX, roof cleaning Sargent TX, driveway cleaning Sargent TX, deck cleaning Sargent TX, dock cleaning Sargent TX, pier cleaning Sargent TX, boat house cleaning Sargent TX, gutter cleaning Sargent TX, trash can cleaning Sargent TX, beach house cleaning Sargent TX, exterior cleaning Sargent TX, pressure washing Lake Jackson TX, pressure washing Bay City TX, pressure washing Brazoria TX, pressure washing near me, soft washing near me, coastal pressure washing Texas',
+  keywords: [
+    'pressure washing Sargent TX',
+    'soft washing Sargent TX',
+    'house washing Sargent TX',
+    'roof cleaning Sargent TX',
+    'driveway cleaning Sargent TX',
+    'dock cleaning Sargent TX',
+    'pier cleaning Sargent TX',
+    'boathouse cleaning Sargent TX',
+    'pressure washing Lake Jackson TX',
+    'pressure washing Freeport TX',
+    'pressure washing Bay City TX',
+    'pressure washing Sweeny TX',
+    'pressure washing Brazoria TX',
+    'pressure washing Cedar Lake TX',
+    'pressure washing Cedar Lane TX',
+    'coastal pressure washing Texas',
+    'exterior cleaning Gulf Coast Texas',
+  ],
+
+  alternates: {
+    canonical: 'https://www.bluelineproservices.com/',
+  },
 
   openGraph: {
     title: 'BlueLine Services',
