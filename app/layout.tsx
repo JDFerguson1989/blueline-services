@@ -3,6 +3,7 @@ import { Inter, Oswald } from 'next/font/google';
 import './globals.css';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import AnalyticsClicks from '@/components/AnalyticsClicks';
+import MobileStickyCTA from '@/components/MobileStickyCTA';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const oswald = Oswald({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-oswald' });
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${oswald.variable}`}>
-      <body className="bg-navy-900 text-white antialiased">
+      <body className="bg-navy-900 text-white antialiased pb-20 lg:pb-0">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -88,6 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }),
           }}
         />
+        <MobileStickyCTA />
         {children}
         <GoogleAnalytics />
         <AnalyticsClicks />

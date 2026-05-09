@@ -1,8 +1,10 @@
+import ContactForm from '@/components/ContactForm';
+
 export default function CTA() {
   return (
     <section id="contact" className="bg-[#071428] border-t border-blue-900/30 py-12">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="grid md:grid-cols-2 gap-8 items-start">
           {/* Left — Guarantee */}
           <div className="flex items-start gap-5">
             {/* Badge */}
@@ -31,8 +33,8 @@ export default function CTA() {
             </div>
           </div>
 
-          {/* Right — Final CTA */}
-          <div className="text-center md:text-left">
+          {/* Right — Quote Form */}
+          <div id="quote" className="text-center md:text-left scroll-mt-24">
             <h2 className="font-display text-2xl md:text-3xl font-bold text-white uppercase leading-tight mb-2">
               GET IT DONE RIGHT THE FIRST TIME
             </h2>
@@ -43,13 +45,17 @@ export default function CTA() {
             <a
               href="tel:8325578758"
               id="cta-call-btn"
-              className="inline-flex items-center justify-center gap-2.5 bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-4 rounded-xl transition-all duration-200 hover:scale-105 shadow-xl shadow-blue-900/50 text-lg w-full md:w-auto"
+              className="inline-flex items-center justify-center gap-2.5 bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-4 rounded-xl transition-all duration-200 hover:scale-105 shadow-xl shadow-blue-900/50 text-lg w-full md:w-auto mb-6"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
               </svg>
               <span className="font-display tracking-widest text-xl">832-557-8758</span>
             </a>
+
+            <div className="mt-6">
+              <ContactForm />
+            </div>
 
             <p className="text-gray-400 text-[11px] mt-4 font-medium uppercase tracking-widest">
               FAMILY-OWNED. RELIABLE. BUILT TO DELIVER{' '}
