@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import FacebookImageBanner from '@/components/FacebookImageBanner';
 
 export const metadata: Metadata = {
   title: 'Pressure Washing Sweeny, TX | Soft Washing & Exterior Cleaning | 832-557-8758',
@@ -338,6 +339,8 @@ export default function Page() {
           </a>
         </div>
       </section>
+
+      <div className="bg-navy-900 py-6 md:py-8 px-4"><FacebookImageBanner variant="compact" /></div>
 
       {/* Internal Links & Footer */}
       <section className="bg-navy-800 border-t border-blue-900/30 py-8">
