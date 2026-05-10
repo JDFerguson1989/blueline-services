@@ -4,97 +4,31 @@ import Footer from '@/components/Footer';
 import FacebookImageBanner from '@/components/FacebookImageBanner';
 
 const GALLERY_ITEMS = [
-  {
-    id: 'sidewalk',
-    image: '/images/sidewalk_both.webp',
-    label: 'Concrete Sidewalk Cleaning',
-    location: 'Bay City, TX',
-    desc: 'Years of dirt and organic buildup removed in a single session.',
-  },
-  {
-    id: 'siding',
-    image: '/images/siding_before.webp',
-    label: 'House Siding Soft Wash',
-    location: 'Matagorda County, TX',
-    desc: 'Algae and mildew safely removed without damaging vinyl or paint.',
-  },
-  {
-    id: 'dock',
-    image: '/images/dock.webp',
-    label: 'Boat Dock Restoration',
-    location: 'Gulf Coast, TX',
-    desc: 'Weathered dock wood brought back to life with professional cleaning.',
-  },
-  {
-    id: 'roof',
-    image: '/images/mobil_home.webp',
-    label: 'Metal Roof Soft Wash',
-    location: 'Brazoria County, TX',
-    desc: 'Black streaks and oxidation eliminated with low-pressure treatment.',
-  },
-  {
-    id: 'patio',
-    image: '/images/algae_after.webp',
-    label: 'Algae & Mildew Removal',
-    location: 'Lake Jackson, TX',
-    desc: 'Green algae growth under deck completely eradicated.',
-  },
-  {
-    id: 'action',
-    image: '/images/patio_slab.webp',
-    label: 'Surface Cleaner in Action',
-    location: 'Angleton, TX',
-    desc: 'Industrial surface cleaner delivering consistent results on concrete.',
-  },
-  {
-    id: 'screen',
-    image: '/images/screen_before.webp',
-    label: 'Screen Enclosure Cleaning',
-    location: 'Clute, TX',
-    desc: 'Dirt and pollen buildup removed from pool cage screens and frames.',
-  },
-  {
-    id: 'fence',
-    image: '/images/white_fence_b4.webp',
-    label: 'White Fence Restoration',
-    location: 'Van Vleck, TX',
-    desc: 'Mildew-stained white vinyl fence restored to original brightness.',
-  },
-  {
-    id: 'fence-after',
-    image: '/images/whitefenceafter.webp',
-    label: 'White Fence After',
-    location: 'Van Vleck, TX',
-    desc: 'Final result after cleaning and brightening treatment.',
-  },
-  {
-    id: 'brick',
-    image: '/images/brick_driveway_before.webp',
-    label: 'Paver Driveway Before',
-    location: 'Markham, TX',
-    desc: 'Faded, dirty paver bricks before professional restoration.',
-  },
-  {
-    id: 'brick-after',
-    image: '/images/brick_driveway.webp',
-    label: 'Paver Driveway After',
-    location: 'Markham, TX',
-    desc: 'Clean, vibrant paver surface after pressure washing and sealing.',
-  },
-  {
-    id: 'roof-before',
-    image: '/images/roofb4.webp',
-    label: 'Roof Before Cleaning',
-    location: 'Sweeny, TX',
-    desc: 'Heavily oxidized and stained metal roof before treatment.',
-  },
-  {
-    id: 'roof-after',
-    image: '/images/roof_after.webp',
-    label: 'Roof After Cleaning',
-    location: 'Sweeny, TX',
-    desc: 'Bright, clean metal roof surface after soft wash application.',
-  },
+  // Original 16
+  { id: 'siding', image: '/images/gallery/new-ba-1.jpg', label: 'House Washing', },
+  { id: 'driveway', image: '/images/gallery/new-ba-2.jpg', label: 'Driveway Cleaning', },
+  { id: 'fence', image: '/images/gallery/new-ba-3.jpg', label: 'Fence Restoration', },
+  { id: 'gutter', image: '/images/gallery/new-ba-4.jpg', label: 'Gutter Cleaning', },
+  { id: 'sidewalk', image: '/images/gallery/new-ba-5.jpg', label: 'Walkway Cleaning', },
+  { id: 'stone', image: '/images/gallery/stone-after.jpg', label: 'Stone Wall Cleaning', },
+  { id: 'flowerbed', image: '/images/gallery/flowerbed-after.jpg', label: 'Flower Bed Border', },
+  { id: 'roof', image: '/images/gallery/brick-roof.jpg', label: 'Roof Soft Wash', },
+  { id: 'roof-metal', image: '/images/gallery/metal-roof.jpg', label: 'Metal Roof Cleaning', },
+  { id: 'dock', image: '/images/gallery/dock.jpg', label: 'Boat Dock Cleaning', },
+  { id: 'roof-house', image: '/images/gallery/roof-1.jpg', label: 'Exterior & Roof Wash', },
+  { id: 'pier', image: '/images/gallery/pier-wash.jpg', label: 'Pier Wash', },
+  { id: 'mobile-home', image: '/images/gallery/mobile-home.png', label: 'Mobile Home Soft Wash', },
+  { id: 'concrete-wash', image: '/images/gallery/concrete-wash.jpg', label: 'Concrete Wash', },
+  { id: 'beach-stairs', image: '/images/gallery/beach-stairs.jpg', label: 'Wooden Stairs Restoration', },
+  { id: 'beach-walkway', image: '/images/gallery/beach-walkway.jpg', label: 'Beach Walkway Cleaning', },
+  // NEW authentic job photos
+  { id: 'real-sidewalk', image: '/images/sidewalk_both.webp', label: 'Concrete Sidewalk Cleaning', },
+  { id: 'real-siding', image: '/images/siding_before.webp', label: 'House Siding Soft Wash', },
+  { id: 'real-dock', image: '/images/dock.webp', label: 'Boat Dock Restoration', },
+  { id: 'real-roof', image: '/images/mobil_home.webp', label: 'Metal Roof Soft Wash', },
+  { id: 'real-action', image: '/images/patio_slab.webp', label: 'Surface Cleaner in Action', },
+  { id: 'real-screen', image: '/images/screen_before.webp', label: 'Screen Enclosure Cleaning', },
+  { id: 'real-fence', image: '/images/white_fence_composite.webp', label: 'White Fence Restoration', },
 ];
 
 function GalleryCard({ item }: { item: (typeof GALLERY_ITEMS)[0] }) {
@@ -103,19 +37,13 @@ function GalleryCard({ item }: { item: (typeof GALLERY_ITEMS)[0] }) {
       <div className="relative w-full aspect-[4/3] overflow-hidden">
         <Image
           src={item.image}
-          alt={`${item.label} before and after pressure washing in ${item.location}`}
+          alt={`${item.label} before and after pressure washing`}
           fill
           className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
         />
       </div>
       <div className="p-4 border-t border-blue-900/30">
-        <div className="flex items-center justify-between mb-2">
-          <span className="text-white text-sm font-bold">{item.label}</span>
-          <span className="bg-blue-600/90 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
-            {item.location}
-          </span>
-        </div>
-        <p className="text-gray-400 text-xs leading-relaxed">{item.desc}</p>
+        <span className="text-white text-sm font-bold">{item.label}</span>
       </div>
     </div>
   );
@@ -125,26 +53,19 @@ export default function GalleryPage() {
   return (
     <main>
       <Navbar />
-
-      {/* Hero */}
       <section className="bg-[#040d1a] pt-28 pb-12 border-b border-blue-900/20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4">
-            Real Results. Real Jobs. Real Texas Gulf Coast.
+            Before & After Gallery
           </h1>
           <p className="text-gray-400 text-sm md:text-base max-w-2xl mx-auto mb-6">
-            Every photo here is from an actual BlueLine Services job. No stock imagery. No AI generation. No borrowed marketing shots. Just honest before-and-after proof of what professional pressure washing can do for your property.
+            Real results from real jobs across the Texas Gulf Coast. Every photo shows actual work delivered by BlueLine Services.
           </p>
-          <a
-            href="/contact"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold px-6 py-3 rounded-lg transition-colors duration-200 border border-blue-500/40"
-          >
+          <a href="/contact" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold px-6 py-3 rounded-lg transition-colors duration-200 border border-blue-500/40">
             Get Your Free Quote
           </a>
         </div>
       </section>
-
-      {/* Gallery Grid */}
       <section className="bg-[#040d1a] py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
@@ -154,8 +75,6 @@ export default function GalleryPage() {
           </div>
         </div>
       </section>
-
-      {/* CTA */}
       <section className="bg-[#040d1a] py-16 border-t border-blue-900/20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">
@@ -164,24 +83,15 @@ export default function GalleryPage() {
           <p className="text-gray-400 text-sm max-w-xl mx-auto mb-6">
             Serving Bay City, Lake Jackson, Angleton, Clute, Freeport, Sweeny, and the entire Texas Gulf Coast.
           </p>
-          <a
-            href="tel:8325578758"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold px-6 py-3 rounded-lg transition-colors duration-200 border border-blue-500/40 mr-4"
-          >
+          <a href="tel:8325578758" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold px-6 py-3 rounded-lg transition-colors duration-200 border border-blue-500/40 mr-4">
             Call (832) 557-8758
           </a>
-          <a
-            href="/contact"
-            className="inline-block bg-transparent hover:bg-blue-900/30 text-white text-sm font-bold px-6 py-3 rounded-lg transition-colors duration-200 border border-blue-500/40"
-          >
+          <a href="/contact" className="inline-block bg-transparent hover:bg-blue-900/30 text-white text-sm font-bold px-6 py-3 rounded-lg transition-colors duration-200 border border-blue-500/40">
             Get a Free Quote
           </a>
         </div>
       </section>
-
-      <div className="bg-navy-900 py-6 md:py-8 px-4">
-        <FacebookImageBanner variant="small" />
-      </div>
+      <div className="bg-navy-900 py-6 md:py-8 px-4"><FacebookImageBanner variant="small" /></div>
       <Footer />
     </main>
   );
