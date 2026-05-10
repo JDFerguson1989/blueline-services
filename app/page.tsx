@@ -12,11 +12,11 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <div className="bg-navy-900 py-8 md:py-12 px-4"><FacebookImageBanner variant="large" /></div>
       <Services />
       <About />
       <Gallery />
       <CTA />
+      <div className="bg-navy-900 py-6 md:py-8 px-4"><FacebookImageBanner variant="small" /></div>
       <Footer />
     </main>
   );

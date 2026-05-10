@@ -6,11 +6,16 @@ const IMG_ALT =
   'Follow BlueLine Services on Facebook for recent projects, before-and-after photos, updates, and local specials';
 
 interface FacebookImageBannerProps {
-  variant?: 'large' | 'compact';
+  variant?: 'large' | 'compact' | 'small';
 }
 
 export default function FacebookImageBanner({ variant = 'large' }: FacebookImageBannerProps) {
   const isLarge = variant === 'large';
+  const isSmall = variant === 'small';
+
+  const maxWidth = isLarge ? 'max-w-[900px]' : isSmall ? 'max-w-[500px]' : 'max-w-[700px]';
+  const imgWidth = isLarge ? 900 : isSmall ? 500 : 700;
+  const imgHeight = isLarge ? 225 : isSmall ? 125 : 200;
 
   return (
     <a
@@ -30,14 +35,14 @@ export default function FacebookImageBanner({ variant = 'large' }: FacebookImage
           transition-transform duration-300
           group-hover:scale-[1.015]
           group-hover:shadow-blue-900/50
-          ${isLarge ? 'max-w-[900px]' : 'max-w-[700px]'}
+          ${maxWidth}
         `}
       >
         <Image
           src={IMG_SRC}
           alt={IMG_ALT}
-          width={isLarge ? 900 : 700}
-          height={isLarge ? 225 : 200}
+          width={imgWidth}
+          height={imgHeight}
           className="w-full h-auto object-cover"
           priority={isLarge}
         />

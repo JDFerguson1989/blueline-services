@@ -112,7 +112,7 @@ export default function Hero() {
       {/* Service Strip */}
       <div className="relative z-10 bg-[#040d1a]/80 backdrop-blur-md border-t border-b border-blue-900/40 py-5 mt-auto shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
         <div className="w-full px-4 overflow-hidden">
-          <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-3 text-[10px] md:text-[11px] font-bold text-gray-400 uppercase tracking-widest text-center leading-none">
+          <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-4 text-xs md:text-sm font-bold text-gray-400 uppercase tracking-widest text-center leading-none">
             {['House Washing', 'Roof Soft Washing', 'Pressure Washing', 'Soft Washing', 'Driveway Cleaning', 'Concrete Cleaning', 'Sidewalk Cleaning', 'Patio Cleaning', 'Pool Deck Cleaning', 'Fence Cleaning', 'Deck Cleaning', 'Gutter Cleaning', 'Gutter Brightening', 'Trash Bin Cleaning', 'Storefront Cleaning', 'Parking Lot Cleaning', 'Dumpster Pad Cleaning', 'Commercial Pressure Washing', 'Boat Dock Cleaning', 'Boathouse Cleaning', 'Exterior Window Rinsing', 'Rust Stain Removal', 'Oil Stain Treatment', 'Mildew & Algae Removal', 'Pre-Sale Property Cleaning', 'Post-Construction Cleanup', 'Sewer Unclogging', 'Sewer Repair', 'Sewer Camera Inspections', 'Free Quotes'].map((service, index, arr) => (
               <span key={service} className="inline-flex items-center gap-3">
                 <span className="text-gray-300 hover:text-white transition-colors cursor-default whitespace-nowrap">{service}</span>
