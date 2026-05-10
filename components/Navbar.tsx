@@ -8,7 +8,7 @@ const NAV_LINKS = [
   { href: '#services', label: 'SERVICES' },
   { href: '#about', label: 'ABOUT US' },
   { href: '#areas', label: 'SERVICE AREAS' },
-  { href: '#gallery', label: 'GALLERY' },
+  { href: '/gallery', label: 'GALLERY' },
   { href: '#contact', label: 'CONTACT' },
 ];
 
