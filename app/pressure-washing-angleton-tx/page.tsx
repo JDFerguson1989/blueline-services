@@ -273,12 +273,12 @@ export default function Page() {
             Areas Near Angleton We Serve
           </h2>
           <p className="text-gray-300 leading-relaxed mb-4">
-            BlueLine Services serves Angleton and nearby Gulf Coast Texas communities, including Sargent, Lake Jackson, Freeport, Sweeny, Brazoria, Van Vleck, Markham, Matagorda, Cedar Lake, Cedar Lane, Angleton, Clute, Richwood, and surrounding areas.
+            BlueLine Services serves Angleton and nearby Gulf Coast Texas communities, including Sargent, Lake Jackson, Freeport, Sweeny, Brazoria, Van Vleck, Markham, Matagorda, Cedar Lake, Cedar Lane, Clute, Richwood, and surrounding areas.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-gray-300">
             {[
               'Angleton, TX', 'Clute, TX', 'Richwood, TX',
-              'Angleton, TX', 'Brazoria, TX',
+              'Bay City, TX', 'Brazoria, TX',
               'Sweeny, TX', 'Sargent, TX',
               'Matagorda, TX', 'Van Vleck, TX', 'Markham, TX',
               'Cedar Lake, TX', 'Cedar Lane, TX',

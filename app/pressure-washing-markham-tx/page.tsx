@@ -273,15 +273,16 @@ export default function Page() {
             Areas Near Markham We Serve
           </h2>
           <p className="text-gray-300 leading-relaxed mb-4">
-            BlueLine Services serves Markham and nearby Gulf Coast Texas communities, including Sargent, Lake Jackson, Freeport, Sweeny, Brazoria, Van Vleck, Markham, Matagorda, Cedar Lake, Cedar Lane, Angleton, Clute, Richwood, and surrounding areas.
+            BlueLine Services serves Markham and nearby Gulf Coast Texas communities, including Sargent, Lake Jackson, Freeport, Sweeny, Brazoria, Van Vleck, Matagorda, Cedar Lake, Cedar Lane, Angleton, Clute, Richwood, and surrounding areas.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-gray-300">
             {[
               'Markham, TX', 'Clute, TX', 'Richwood, TX',
               'Angleton, TX', 'Brazoria, TX',
               'Sweeny, TX', 'Sargent, TX',
-              'Matagorda, TX', 'Van Vleck, TX', 'Markham, TX',
+              'Matagorda, TX', 'Van Vleck, TX',
               'Cedar Lake, TX', 'Cedar Lane, TX',
+              'Bay City, TX',
             ].map((city) => (
               <div key={city} className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 bg-blue-400 rounded-full"></span>
