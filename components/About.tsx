@@ -19,6 +19,11 @@ const SERVICE_AREAS = [
   'CEDAR LAKE, TX',
   'CEDAR LANE, TX',
   'BRAZORIA, TX',
+  'MATAGORDA, TX',
+  'VAN VLECK, TX',
+  'MARKHAM, TX',
+  'CLUTE, TX',
+  'ANGLETON, TX',
 ];
 
 const LINKED_PATHS = {
@@ -28,6 +33,11 @@ const LINKED_PATHS = {
   "BAY CITY, TX": "/pressure-washing-bay-city-tx",
   "SWEENY, TX": "/pressure-washing-sweeny-tx",
   "BRAZORIA, TX": "/pressure-washing-brazoria-tx",
+  "MATAGORDA, TX": "/pressure-washing-matagorda-tx",
+  "VAN VLECK, TX": "/pressure-washing-van-vleck-tx",
+  "MARKHAM, TX": "/pressure-washing-markham-tx",
+  "CLUTE, TX": "/pressure-washing-clute-tx",
+  "ANGLETON, TX": "/pressure-washing-angleton-tx",
   "CEDAR LAKE, TX": "/pressure-washing-cedar-lake-tx",
   "CEDAR LANE, TX": "/pressure-washing-cedar-lane-tx",
 };
