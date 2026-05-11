@@ -60,4 +60,20 @@
     <loc>https://www.bluelineproservices.com/gallery</loc>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://www.bluelineproservices.com/soft-washing</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.bluelineproservices.com/roof-cleaning</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.bluelineproservices.com/house-washing</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.bluelineproservices.com/driveway-cleaning</loc>
+    <priority>0.9</priority>
+  </url>
 </urlset>

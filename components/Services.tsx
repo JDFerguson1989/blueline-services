@@ -1,6 +1,7 @@
 const SERVICES = [
   {
     id: 'house-washing',
+    href: '/house-washing',
     icon: (
       <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none">
         <path d="M32 8L8 28v28h48V28L32 8z" stroke="#60A5FA" strokeWidth="2.5" strokeLinejoin="round" fill="rgba(21,101,192,0.15)" />
@@ -15,6 +16,7 @@ const SERVICES = [
   },
   {
     id: 'driveway-cleaning',
+    href: '/driveway-cleaning',
     icon: (
       <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none">
         <rect x="12" y="16" width="40" height="32" rx="2" stroke="#60A5FA" strokeWidth="2.5" fill="rgba(21,101,192,0.15)" />
@@ -31,6 +33,7 @@ const SERVICES = [
   },
   {
     id: 'roof-cleaning',
+    href: '/roof-cleaning',
     icon: (
       <svg viewBox="0 0 64 64" className="w-12 h-12" fill="none">
         <path d="M8 30L32 8l24 22" stroke="#60A5FA" strokeWidth="2.5" strokeLinejoin="round" fill="rgba(21,101,192,0.15)" />
@@ -160,26 +163,48 @@ export default function Services() {
 
         {/* Services Grid — top row 5, bottom row 5 */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mb-4">
-          {SERVICES.slice(0, 5).map((service) => (
-            <div key={service.id} id={`service-${service.id}`} className="card-service flex flex-col items-center text-center gap-3">
-              <div className="flex items-center justify-center">{service.icon}</div>
-              <h3 className="font-display font-bold text-white text-sm uppercase tracking-wide leading-tight">
-                {service.title}
-              </h3>
-              <p className="text-gray-400 text-xs leading-relaxed">{service.desc}</p>
-            </div>
-          ))}
+          {SERVICES.slice(0, 5).map((service) =>
+            service.href ? (
+              <a key={service.id} id={`service-${service.id}`} href={service.href} className="card-service flex flex-col items-center text-center gap-3 group cursor-pointer">
+                <div className="flex items-center justify-center">{service.icon}</div>
+                <h3 className="font-display font-bold text-white text-sm uppercase tracking-wide leading-tight group-hover:text-blue-400 transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-gray-400 text-xs leading-relaxed">{service.desc}</p>
+                <span className="text-blue-400 text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity">Learn more &rarr;</span>
+              </a>
+            ) : (
+              <div key={service.id} id={`service-${service.id}`} className="card-service flex flex-col items-center text-center gap-3">
+                <div className="flex items-center justify-center">{service.icon}</div>
+                <h3 className="font-display font-bold text-white text-sm uppercase tracking-wide leading-tight">
+                  {service.title}
+                </h3>
+                <p className="text-gray-400 text-xs leading-relaxed">{service.desc}</p>
+              </div>
+            )
+          )}
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-          {SERVICES.slice(5, 10).map((service) => (
-            <div key={service.id} id={`service-${service.id}`} className="card-service flex flex-col items-center text-center gap-3">
-              <div className="flex items-center justify-center">{service.icon}</div>
-              <h3 className="font-display font-bold text-white text-sm uppercase tracking-wide leading-tight">
-                {service.title}
-              </h3>
-              <p className="text-gray-400 text-xs leading-relaxed">{service.desc}</p>
-            </div>
-          ))}
+          {SERVICES.slice(5, 10).map((service) =>
+            service.href ? (
+              <a key={service.id} id={`service-${service.id}`} href={service.href} className="card-service flex flex-col items-center text-center gap-3 group cursor-pointer">
+                <div className="flex items-center justify-center">{service.icon}</div>
+                <h3 className="font-display font-bold text-white text-sm uppercase tracking-wide leading-tight group-hover:text-blue-400 transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-gray-400 text-xs leading-relaxed">{service.desc}</p>
+                <span className="text-blue-400 text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity">Learn more &rarr;</span>
+              </a>
+            ) : (
+              <div key={service.id} id={`service-${service.id}`} className="card-service flex flex-col items-center text-center gap-3">
+                <div className="flex items-center justify-center">{service.icon}</div>
+                <h3 className="font-display font-bold text-white text-sm uppercase tracking-wide leading-tight">
+                  {service.title}
+                </h3>
+                <p className="text-gray-400 text-xs leading-relaxed">{service.desc}</p>
+              </div>
+            )
+          )}
         </div>
       </div>
     </section>
