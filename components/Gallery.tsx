@@ -183,7 +183,7 @@ export default function Gallery() {
             <div className="flex-1 h-px bg-blue-600/40 max-w-[180px]" />
           </div>
           <p className="text-gray-400 text-sm max-w-md mx-auto">
-            Real results from real jobs in your community. This is what BlueLine Services delivers.
+            Explore the kind of clean, refreshed results BlueLine Services is built to deliver for homes, rentals, docks, driveways, patios, and exterior surfaces across the Texas Gulf Coast.
           </p>
         </div>
 
@@ -193,6 +193,10 @@ export default function Gallery() {
             <GalleryCard key={item.id} item={item} />
           ))}
         </div>
+
+        <p className="text-center text-gray-500 text-[10px] mt-6 max-w-2xl mx-auto">
+          Images in this section may include representative examples until more completed BlueLine project photos are added.
+        </p>
 
         {/* CTA to full gallery */}
         <div className="text-center mt-10">
