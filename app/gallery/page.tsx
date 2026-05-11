@@ -59,7 +59,7 @@ export default function GalleryPage() {
             Before & After Gallery
           </h1>
           <p className="text-gray-400 text-sm md:text-base max-w-2xl mx-auto mb-6">
-            Explore the kind of clean, refreshed results BlueLine Services is built to deliver for homes, rentals, docks, driveways, patios, and exterior surfaces across the Texas Gulf Coast.
+            Service examples and project inspiration showing the clean, refreshed look BlueLine Services is built to deliver for homes, rentals, driveways, docks, and exterior surfaces in your community.
           </p>
           <a href="/contact" className="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold px-6 py-3 rounded-lg transition-colors duration-200 border border-blue-500/40">
             Get Your Free Quote
