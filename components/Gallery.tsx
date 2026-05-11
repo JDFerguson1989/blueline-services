@@ -29,14 +29,12 @@ const GALLERY_ITEMS = [
   },
   {
     id: 'stone',
-    before: '/images/gallery/stone-before.jpg',
-    after: '/images/gallery/stone-after.jpg',
+    image: '/images/stone_composite.webp',
     label: 'Stone Wall Cleaning',
   },
   {
     id: 'flowerbed',
-    before: '/images/gallery/flowerbed-before.jpg',
-    after: '/images/gallery/flowerbed-after.jpg',
+    image: '/images/flowerbed_composite.webp',
     label: 'Flower Bed Border',
   },
   {
@@ -125,43 +123,14 @@ const GALLERY_ITEMS = [
 function GalleryCard({ item }: { item: (typeof GALLERY_ITEMS)[0] }) {
   return (
     <div id={`gallery-${item.id}`} className="relative overflow-hidden rounded-xl shadow-[0_10px_30px_rgba(4,13,26,0.8)] border border-blue-900/40 group h-56 lg:h-64 bg-black">
-      {item.image ? (
-        <div className="relative w-full h-full overflow-hidden">
-          <Image
-            src={item.image}
-            alt={`${item.label} before and after`}
-            fill
-            className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
-          />
-        </div>
-      ) : (
-        <div className="grid grid-cols-2 h-full">
-          {/* Before */}
-          <div className="relative overflow-hidden">
-            <Image
-              src={item.before!}
-              alt={`${item.label} before cleaning`}
-              fill
-              className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
-            />
-            <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white text-[11px] font-bold text-center py-1.5 uppercase tracking-wider">
-              BEFORE
-            </div>
-          </div>
-          {/* After */}
-          <div className="relative overflow-hidden border-l border-blue-500/50">
-            <Image
-              src={item.after!}
-              alt={`${item.label} after cleaning`}
-              fill
-              className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
-            />
-            <div className="absolute bottom-0 left-0 right-0 bg-blue-600/90 text-white text-[11px] font-bold text-center py-1.5 uppercase tracking-wider">
-              AFTER
-            </div>
-          </div>
-        </div>
-      )}
+      <div className="relative w-full h-full overflow-hidden">
+        <Image
+          src={item.image}
+          alt={`${item.label} before and after`}
+          fill
+          className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
+        />
+      </div>
 
       {/* Label */}
       <div className="absolute top-3 left-1/2 -translate-x-1/2 bg-black/80 backdrop-blur-md text-white text-[11px] lg:text-xs font-bold px-3 lg:px-4 py-1.5 rounded-full border border-blue-500/40 whitespace-nowrap shadow-lg z-10 pointer-events-none">
