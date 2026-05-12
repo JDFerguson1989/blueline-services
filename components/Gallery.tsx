@@ -47,11 +47,6 @@ const GALLERY_ITEMS = [
     label: 'Roof Soft Wash',
   },
   {
-    id: 'roof-ba',
-    image: '/images/gallery/new-ba-1.webp',
-    label: 'Roof Cleaning',
-  },
-  {
     id: 'screen-enclosure',
     image: '/images/gallery/screen-enclosure-cleaning-composite.webp',
     label: 'Screen Enclosure Cleaning',
