@@ -6,7 +6,7 @@ import FacebookImageBanner from '@/components/FacebookImageBanner';
 const GALLERY_ITEMS = [
   {
     id: 'house-siding',
-    image: '/images/gallery/house-siding-cleaning-composite.webp',
+    image: '/images/gallery/house-siding-cleaning-landscape.webp',
     label: 'House Washing',
   },
   {
@@ -70,11 +70,6 @@ const GALLERY_ITEMS = [
     label: 'Boathouse Cleaning',
   },
   {
-    id: 'dock',
-    image: '/images/gallery/dock-pressure-washing.webp',
-    label: 'Boat Dock Cleaning',
-  },
-  {
     id: 'pier',
     image: '/images/gallery/pier-wash.webp',
     label: 'Pier Wash',
@@ -91,7 +86,7 @@ const GALLERY_ITEMS = [
   },
   {
     id: 'balcony-patio',
-    image: '/images/gallery/balcony-patio-cleaning.webp',
+    image: '/images/gallery/balcony-patio-cleaning-landscape.webp',
     label: 'Balcony & Patio Cleaning',
   },
   {
