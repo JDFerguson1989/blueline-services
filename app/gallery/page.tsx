@@ -10,14 +10,14 @@ const GALLERY_ITEMS = [
     label: 'House Washing',
   },
   {
-    id: 'fence',
-    image: '/images/gallery/fence-restoration-composite.webp',
-    label: 'Fence Restoration',
-  },
-  {
     id: 'driveway-split',
     image: '/images/gallery/new-ba-2.webp',
     label: 'Driveway Cleaning',
+  },
+  {
+    id: 'fence',
+    image: '/images/gallery/fence-restoration-composite.webp',
+    label: 'Fence Restoration',
   },
   {
     id: 'stone-wall',
@@ -28,6 +28,21 @@ const GALLERY_ITEMS = [
     id: 'sidewalk',
     image: '/images/gallery/sidewalk-cleaning-composite.webp',
     label: 'Sidewalk Cleaning',
+  },
+  {
+    id: 'wooden-stairs',
+    image: '/images/gallery/wooden-stairs-restoration-composite.webp',
+    label: 'Wooden Stairs Restoration',
+  },
+  {
+    id: 'brick-driveway',
+    image: '/images/gallery/brick-driveway-cleaning-composite.webp',
+    label: 'Brick Driveway Cleaning',
+  },
+  {
+    id: 'flowerbed-border',
+    image: '/images/gallery/flowerbed-border-cleaning-composite.webp',
+    label: 'Flower Bed Border Cleaning',
   },
   {
     id: 'roof-soft-wash',
@@ -43,16 +58,6 @@ const GALLERY_ITEMS = [
     id: 'screen-enclosure',
     image: '/images/gallery/screen-enclosure-cleaning-composite.webp',
     label: 'Screen Enclosure Cleaning',
-  },
-  {
-    id: 'flowerbed-border',
-    image: '/images/gallery/flowerbed-border-cleaning-composite.webp',
-    label: 'Flower Bed Border Cleaning',
-  },
-  {
-    id: 'wooden-stairs',
-    image: '/images/gallery/wooden-stairs-restoration-composite.webp',
-    label: 'Wooden Stairs Restoration',
   },
   {
     id: 'beach-boardwalk',
@@ -93,11 +98,6 @@ const GALLERY_ITEMS = [
     id: 'algae',
     image: '/images/gallery/algae-removal-after.webp',
     label: 'Algae Removal',
-  },
-  {
-    id: 'brick-driveway',
-    image: '/images/gallery/brick-driveway-cleaning-composite.webp',
-    label: 'Brick Driveway Cleaning',
   },
   {
     id: 'fence-action',
