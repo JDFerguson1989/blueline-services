@@ -4,31 +4,146 @@ import Footer from '@/components/Footer';
 import FacebookImageBanner from '@/components/FacebookImageBanner';
 
 const GALLERY_ITEMS = [
-  // Original 16
-  { id: 'siding', image: '/images/gallery/new-ba-1.jpg', label: 'House Washing', },
-  { id: 'driveway', image: '/images/gallery/new-ba-2.jpg', label: 'Driveway Cleaning', },
-  { id: 'fence', image: '/images/gallery/new-ba-3.jpg', label: 'Fence Restoration', },
-  { id: 'gutter', image: '/images/gallery/new-ba-4.jpg', label: 'Gutter Cleaning', },
-  { id: 'sidewalk', image: '/images/gallery/new-ba-5.jpg', label: 'Walkway Cleaning', },
-  { id: 'stone', image: '/images/stone_composite.webp', label: 'Stone Wall Cleaning', },
-  { id: 'flowerbed', image: '/images/flowerbed_composite.webp', label: 'Flower Bed Border', },
-  { id: 'roof', image: '/images/gallery/brick-roof.jpg', label: 'Roof Soft Wash', },
-  { id: 'roof-metal', image: '/images/gallery/metal-roof.jpg', label: 'Metal Roof Cleaning', },
-  { id: 'dock', image: '/images/gallery/dock.jpg', label: 'Boat Dock Cleaning', },
-  { id: 'roof-house', image: '/images/gallery/roof-1.jpg', label: 'Exterior & Roof Wash', },
-  { id: 'pier', image: '/images/gallery/pier-wash.jpg', label: 'Pier Wash', },
-  { id: 'mobile-home', image: '/images/gallery/mobile-home.png', label: 'Mobile Home Soft Wash', },
-  { id: 'concrete-wash', image: '/images/gallery/concrete-wash.jpg', label: 'Concrete Wash', },
-  { id: 'beach-stairs', image: '/images/gallery/beach-stairs.jpg', label: 'Wooden Stairs Restoration', },
-  { id: 'beach-walkway', image: '/images/gallery/beach-walkway.jpg', label: 'Beach Walkway Cleaning', },
-  // NEW authentic job photos
-  { id: 'real-sidewalk', image: '/images/sidewalk_both.webp', label: 'Concrete Sidewalk Cleaning', },
-  { id: 'real-siding', image: '/images/siding_before.webp', label: 'House Siding Soft Wash', },
-  { id: 'real-dock', image: '/images/dock.webp', label: 'Boat Dock Restoration', },
-  { id: 'real-roof', image: '/images/mobil_home.webp', label: 'Metal Roof Soft Wash', },
-  { id: 'real-action', image: '/images/patio_slab.webp', label: 'Surface Cleaner in Action', },
-  { id: 'real-screen', image: '/images/screen_before.webp', label: 'Screen Enclosure Cleaning', },
-  { id: 'real-fence', image: '/images/white_fence_composite.webp', label: 'White Fence Restoration', },
+  {
+    id: 'house-siding',
+    image: '/images/gallery/house-siding-cleaning-composite.webp',
+    label: 'House Washing',
+  },
+  {
+    id: 'fence',
+    image: '/images/gallery/fence-restoration-composite.webp',
+    label: 'Fence Restoration',
+  },
+  {
+    id: 'driveway-split',
+    image: '/images/gallery/new-ba-2.webp',
+    label: 'Driveway Cleaning',
+  },
+  {
+    id: 'stone-wall',
+    image: '/images/gallery/stone-wall-cleaning-composite.webp',
+    label: 'Stone Wall Cleaning',
+  },
+  {
+    id: 'sidewalk',
+    image: '/images/gallery/sidewalk-cleaning-composite.webp',
+    label: 'Sidewalk Cleaning',
+  },
+  {
+    id: 'roof-soft-wash',
+    image: '/images/gallery/roof-soft-wash-composite.webp',
+    label: 'Roof Soft Wash',
+  },
+  {
+    id: 'roof-ba',
+    image: '/images/gallery/new-ba-1.webp',
+    label: 'Roof Cleaning',
+  },
+  {
+    id: 'screen-enclosure',
+    image: '/images/gallery/screen-enclosure-cleaning-composite.webp',
+    label: 'Screen Enclosure Cleaning',
+  },
+  {
+    id: 'flowerbed-border',
+    image: '/images/gallery/flowerbed-border-cleaning-composite.webp',
+    label: 'Flower Bed Border Cleaning',
+  },
+  {
+    id: 'wooden-stairs',
+    image: '/images/gallery/wooden-stairs-restoration-composite.webp',
+    label: 'Wooden Stairs Restoration',
+  },
+  {
+    id: 'beach-boardwalk',
+    image: '/images/gallery/beach-boardwalk-cleaning-composite.webp',
+    label: 'Beach Boardwalk Cleaning',
+  },
+  {
+    id: 'patio-concrete',
+    image: '/images/gallery/patio-concrete-pressure-washing.webp',
+    label: 'Patio & Concrete Cleaning',
+  },
+  {
+    id: 'boathouse',
+    image: '/images/gallery/boathouse-cleaning.webp',
+    label: 'Boathouse Cleaning',
+  },
+  {
+    id: 'dock',
+    image: '/images/gallery/dock-pressure-washing.webp',
+    label: 'Boat Dock Cleaning',
+  },
+  {
+    id: 'pier',
+    image: '/images/gallery/pier-wash.webp',
+    label: 'Pier Wash',
+  },
+  {
+    id: 'beach-stairs',
+    image: '/images/gallery/beach-stairs.webp',
+    label: 'Beach Stairs Cleaning',
+  },
+  {
+    id: 'beach-walkway',
+    image: '/images/gallery/beach-walkway.webp',
+    label: 'Beach Walkway Cleaning',
+  },
+  {
+    id: 'balcony-patio',
+    image: '/images/gallery/balcony-patio-cleaning.webp',
+    label: 'Balcony & Patio Cleaning',
+  },
+  {
+    id: 'algae',
+    image: '/images/gallery/algae-removal-after.webp',
+    label: 'Algae Removal',
+  },
+  {
+    id: 'brick-driveway',
+    image: '/images/gallery/brick-driveway-cleaning-composite.webp',
+    label: 'Brick Driveway Cleaning',
+  },
+  {
+    id: 'fence-action',
+    image: '/images/gallery/new-ba-3.webp',
+    label: 'Fence Cleaning',
+  },
+  {
+    id: 'walkway',
+    image: '/images/gallery/new-ba-5.webp',
+    label: 'Walkway Cleaning',
+  },
+  {
+    id: 'gutter',
+    image: '/images/gallery/new-ba-4.webp',
+    label: 'Gutter Cleaning',
+  },
+  {
+    id: 'mobile-home',
+    image: '/images/gallery/mobile-home-soft-wash.webp',
+    label: 'Mobile Home Soft Wash',
+  },
+  {
+    id: 'metal-roof',
+    image: '/images/gallery/metal-roof.webp',
+    label: 'Metal Roof Cleaning',
+  },
+  {
+    id: 'roof-house',
+    image: '/images/gallery/roof-1.webp',
+    label: 'Roof Cleaning',
+  },
+  {
+    id: 'brick-roof',
+    image: '/images/gallery/brick-roof.webp',
+    label: 'Brick & Roof Cleaning',
+  },
+  {
+    id: 'concrete',
+    image: '/images/gallery/concrete-wash.webp',
+    label: 'Concrete Pressure Washing',
+  },
 ];
 
 function GalleryCard({ item }: { item: (typeof GALLERY_ITEMS)[0] }) {
@@ -37,7 +152,7 @@ function GalleryCard({ item }: { item: (typeof GALLERY_ITEMS)[0] }) {
       <div className="relative w-full aspect-[4/3] overflow-hidden">
         <Image
           src={item.image}
-          alt={`${item.label} before and after pressure washing`}
+          alt={`${item.label} by BlueLine Services`}
           fill
           className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
         />

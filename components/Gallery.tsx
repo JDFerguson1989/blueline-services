@@ -4,7 +4,7 @@ const GALLERY_ITEMS = [
   {
     id: 'house-siding',
     image: '/images/gallery/house-siding-cleaning-composite.webp',
-    label: 'House Siding Cleaning',
+    label: 'House Washing',
   },
   {
     id: 'fence',
@@ -12,9 +12,14 @@ const GALLERY_ITEMS = [
     label: 'Fence Restoration',
   },
   {
-    id: 'roof-soft-wash',
-    image: '/images/gallery/roof-soft-wash-composite.webp',
-    label: 'Roof Soft Wash',
+    id: 'driveway-split',
+    image: '/images/gallery/new-ba-2.webp',
+    label: 'Driveway Cleaning',
+  },
+  {
+    id: 'stone-wall',
+    image: '/images/gallery/stone-wall-cleaning-composite.webp',
+    label: 'Stone Wall Cleaning',
   },
   {
     id: 'sidewalk',
@@ -22,14 +27,19 @@ const GALLERY_ITEMS = [
     label: 'Sidewalk Cleaning',
   },
   {
+    id: 'roof-soft-wash',
+    image: '/images/gallery/roof-soft-wash-composite.webp',
+    label: 'Roof Soft Wash',
+  },
+  {
+    id: 'roof-ba',
+    image: '/images/gallery/new-ba-1.webp',
+    label: 'Roof Cleaning',
+  },
+  {
     id: 'screen-enclosure',
     image: '/images/gallery/screen-enclosure-cleaning-composite.webp',
     label: 'Screen Enclosure Cleaning',
-  },
-  {
-    id: 'stone-wall',
-    image: '/images/gallery/stone-wall-cleaning-composite.webp',
-    label: 'Stone Wall Cleaning',
   },
   {
     id: 'flowerbed-border',
@@ -47,19 +57,9 @@ const GALLERY_ITEMS = [
     label: 'Beach Boardwalk Cleaning',
   },
   {
-    id: 'driveway',
-    image: '/images/gallery/new-ba-2.webp',
-    label: 'Driveway Cleaning',
-  },
-  {
     id: 'patio-concrete',
     image: '/images/gallery/patio-concrete-pressure-washing.webp',
-    label: 'Patio and Concrete Cleaning',
-  },
-  {
-    id: 'dock',
-    image: '/images/gallery/dock-pressure-washing.webp',
-    label: 'Boat Dock Cleaning',
+    label: 'Patio & Concrete Cleaning',
   },
   {
     id: 'boathouse',
@@ -67,19 +67,14 @@ const GALLERY_ITEMS = [
     label: 'Boathouse Cleaning',
   },
   {
-    id: 'brick-driveway',
-    image: '/images/gallery/brick-driveway-before.webp',
-    label: 'Brick Driveway Cleaning',
+    id: 'dock',
+    image: '/images/gallery/dock-pressure-washing.webp',
+    label: 'Boat Dock Cleaning',
   },
   {
-    id: 'metal-roof',
-    image: '/images/gallery/metal-roof.webp',
-    label: 'Metal Roof Cleaning',
-  },
-  {
-    id: 'concrete',
-    image: '/images/gallery/concrete-wash.webp',
-    label: 'Concrete Pressure Washing',
+    id: 'pier',
+    image: '/images/gallery/pier-wash.webp',
+    label: 'Pier Wash',
   },
   {
     id: 'beach-stairs',
@@ -92,14 +87,34 @@ const GALLERY_ITEMS = [
     label: 'Beach Walkway Cleaning',
   },
   {
+    id: 'balcony-patio',
+    image: '/images/gallery/balcony-patio-cleaning.webp',
+    label: 'Balcony & Patio Cleaning',
+  },
+  {
     id: 'algae',
     image: '/images/gallery/algae-removal-after.webp',
     label: 'Algae Removal',
   },
   {
-    id: 'balcony-patio',
-    image: '/images/gallery/balcony-patio-cleaning.webp',
-    label: 'Balcony and Patio Cleaning',
+    id: 'brick-driveway',
+    image: '/images/gallery/brick-driveway-cleaning-composite.webp',
+    label: 'Brick Driveway Cleaning',
+  },
+  {
+    id: 'fence-action',
+    image: '/images/gallery/new-ba-3.webp',
+    label: 'Fence Cleaning',
+  },
+  {
+    id: 'walkway',
+    image: '/images/gallery/new-ba-5.webp',
+    label: 'Walkway Cleaning',
+  },
+  {
+    id: 'gutter',
+    image: '/images/gallery/new-ba-4.webp',
+    label: 'Gutter Cleaning',
   },
   {
     id: 'mobile-home',
@@ -107,9 +122,9 @@ const GALLERY_ITEMS = [
     label: 'Mobile Home Soft Wash',
   },
   {
-    id: 'pier',
-    image: '/images/gallery/pier-wash.webp',
-    label: 'Pier Wash',
+    id: 'metal-roof',
+    image: '/images/gallery/metal-roof.webp',
+    label: 'Metal Roof Cleaning',
   },
   {
     id: 'roof-house',
@@ -119,27 +134,12 @@ const GALLERY_ITEMS = [
   {
     id: 'brick-roof',
     image: '/images/gallery/brick-roof.webp',
-    label: 'Brick and Roof Cleaning',
+    label: 'Brick & Roof Cleaning',
   },
   {
-    id: 'gutter',
-    image: '/images/gallery/new-ba-4.webp',
-    label: 'Gutter Cleaning',
-  },
-  {
-    id: 'siding-ba',
-    image: '/images/gallery/new-ba-1.webp',
-    label: 'House Washing',
-  },
-  {
-    id: 'siding-single',
-    image: '/images/gallery/new-ba-3.webp',
-    label: 'Siding Cleaning',
-  },
-  {
-    id: 'walkway',
-    image: '/images/gallery/new-ba-5.webp',
-    label: 'Walkway Cleaning',
+    id: 'concrete',
+    image: '/images/gallery/concrete-wash.webp',
+    label: 'Concrete Pressure Washing',
   },
 ];
 
@@ -149,7 +149,7 @@ function GalleryCard({ item }: { item: (typeof GALLERY_ITEMS)[0] }) {
       <div className="relative w-full h-full overflow-hidden">
         <Image
           src={item.image}
-          alt={`${item.label} before and after pressure washing`}
+          alt={`${item.label} by BlueLine Services`}
           fill
           className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
         />
