@@ -44,7 +44,7 @@ export default function Footer() {
       <div className='py-4 border-t border-blue-900/20'>
         <div className='max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3'>
           <p className='text-gray-500 text-xs'>
-            &copy; 2024 BlueLine Services. All Rights Reserved.
+            &copy; 2026 BlueLine Services. All Rights Reserved.
           </p>
           <a
             href='https://www.facebook.com/profile.php?id=61589064537386'
